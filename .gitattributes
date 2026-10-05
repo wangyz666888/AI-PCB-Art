@@ -1,0 +1,15 @@
+# 统一换行符，避免跨平台（Windows CRLF / Linux LF）产生无意义的 whole-file diff
+* text=auto eol=lf
+
+# 明确声明为二进制，禁止 Git 做换行转换或 diff
+*.eprj2   binary
+*.zip     binary
+*.png     binary
+*.jpg     binary
+*.jpeg    binary
+*.webp    binary
+*.ui      binary
+
+# 让 GitHub 正确统计语言占比
+*.py      text
+*.md      text
